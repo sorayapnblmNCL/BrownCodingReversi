@@ -108,13 +108,14 @@ public class MoveChecker {
      *
      * @return string with the results of the game
      */
-    // 1 ERROR FIXED
+    // 2 ERROR FIXED
     public String getFinalScore(){
         int lights = 0;
         int darks = 0;
 
         for (int row = 0; row < BOARD_SIZE; row++) {
-            for (Cell cell : this.cells[row++]) {
+            // error fixed
+            for (Cell cell : this.cells[row]) {
                 if (cell.getValue() == CellStatus.DARK){
                     darks++;
                 } else if (cell.getValue() == CellStatus.LIGHT){
