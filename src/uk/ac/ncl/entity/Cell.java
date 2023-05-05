@@ -68,8 +68,10 @@ public class Cell {
     /**
      *   Updates the status of the cell
      */
+    // 1 ERROR FIXED
     public void setValue(CellStatus value) {
-        value = this.value;
+        // error fixed
+        this.value = value;
         switch (value){
             case EMPTY:
                 this.jButton.setBackground(new Color(820000));
