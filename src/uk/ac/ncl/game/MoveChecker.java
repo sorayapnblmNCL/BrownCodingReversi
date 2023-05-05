@@ -110,7 +110,7 @@ public class MoveChecker {
      *
      * @return string with the results of the game
      */
-    // 2 ERROR FIXED
+    // 3 ERROR FIXED
     public String getFinalScore(){
         int lights = 0;
         int darks = 0;
@@ -128,7 +128,8 @@ public class MoveChecker {
 
         if (darks == lights)
             return "The game is over. It is a draw. Each player has " + darks + " pieces";
-        String winner = darks <  lights ? "Dark" : "Light";
+        // error fixed
+        String winner = darks >  lights ? "Dark" : "Light";
         // error fixed
         return "The game is over."
                 + winner + " has won with the result: Dark - " + darks + " Light - " + lights;
