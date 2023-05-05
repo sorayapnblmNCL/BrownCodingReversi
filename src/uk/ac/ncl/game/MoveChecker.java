@@ -52,8 +52,10 @@ public class MoveChecker {
      * @param cell - piece we have just put on the board
      * @param colour - colour of the current player
      */
+    // 1 ERROR FIXED
     public void flipPieces(Cell cell, CellStatus colour) {
-        cell.colourTemp(colour == OPPONENTS_CELL_STATUS ? OPPONENTS_COLOUR : PLAYERS_COLOUR, true);
+        // error fixed
+        cell.colourTemp(colour == OPPONENTS_CELL_STATUS ? OPPONENTS_COLOUR : PLAYERS_COLOUR, false);
         for (DirectedMove move : cell.getMove().getMoves()) {
             int[] dir = move.getDirection();
             int d_row = cell.getRow();
