@@ -32,12 +32,14 @@ public class MoveChecker {
      * @param cellStatus - colour of the opponent
      * @return a piece to make a move
      */
+    // 1 ERROR FIXED
     public Cell generateOpponent(CellStatus cellStatus) {
         ArrayList<Cell> potentialMoves = findPotentialMoves(cellStatus);
         Cell opponentsMove = null;
         for (Cell cell : potentialMoves){
-                opponentsMove = opponentsMove == null
-                        && cell.getMove().getScore() > opponentsMove.getMove().getScore()
+            // error fixed
+                opponentsMove = ((opponentsMove == null)
+                        || (cell.getMove().getScore() > opponentsMove.getMove().getScore()))
                         ? cell
                         : opponentsMove;
         }
