@@ -113,7 +113,7 @@ public class Cell {
      * @param cells - current information about the board
      * @return whether move is possible for the piece. If this is the case, then possible moves are stored in Piece.
      */
-    // 3 ERROR FIXED
+    // 4 ERROR FIXED
     public boolean isLegal(CellStatus colour, Cell[][] cells){
         CellStatus opponent = colour == CellStatus.LIGHT ? CellStatus.DARK : CellStatus.LIGHT;
         int score = 0;
@@ -136,6 +136,8 @@ public class Cell {
                         if (cell.getValue() == colour) {
                             score += temp_score;
                             moves.add(new DirectedMove(cell, dir));
+                            // error fixed
+                            break;
                         }
                     } else {
                         break;
