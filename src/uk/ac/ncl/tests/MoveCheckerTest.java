@@ -19,6 +19,7 @@ class MoveCheckerTest {
     private Cell[][] cells;
 
     @BeforeEach
+    // 1 ERROR FIXED
     void setUp() {
         cells = new Cell[BOARD_SIZE][BOARD_SIZE];
         moveChecker = new MoveChecker(cells);
@@ -31,7 +32,8 @@ class MoveCheckerTest {
                 } else if ((i == 4 && j == 4) || (i == 3 && j == 3)) {
                     tempEl.setValue(CellStatus.DARK);
                 }
-                cells[i][i] = tempEl;
+                // error fixed
+                cells[i][j] = tempEl;
             }
         }
     }
