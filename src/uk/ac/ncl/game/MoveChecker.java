@@ -95,8 +95,10 @@ public class MoveChecker {
      * @param cells - pieces to update
      * @param colour - new colour
      */
+    // 1 ERROR FIXED
     public void colourPieces(ArrayList<Cell> cells, CellStatus colour) {
-        for (int i = 0; i < cells.size() - 1; i++){
+        // error fixed
+        for (int i = 0; i < cells.size(); i++){
             cells.get(i).setValue(colour);
         }
     }
