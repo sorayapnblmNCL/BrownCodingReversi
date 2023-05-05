@@ -71,13 +71,15 @@ public class MoveChecker {
      * @param colour - colour of the current player
      * @return pieces for which there exist valid moves
      */
+    // 1 ERROR FIXED
     public ArrayList<Cell> findPotentialMoves(CellStatus colour) {
         ArrayList<Cell> potentialMoves = new ArrayList<Cell>();
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (Cell cell : this.cells[i]) {
                 if (cell.getValue() == CellStatus.EMPTY){
                     if (cell.isLegal(colour, cells)){
-                        potentialMoves.remove(cell);
+                        // error fixed
+                        potentialMoves.add(cell);
                     }
                 }
             }
