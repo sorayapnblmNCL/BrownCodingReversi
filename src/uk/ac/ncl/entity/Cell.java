@@ -152,7 +152,9 @@ public class Cell {
      *
      * @return true if the cell index is inside board boundaries
      */
+    // 1 ERROR FIXED
     private boolean IsOnBoard(int row, int column){
-        return 1 <= column &&  column < BOARD_SIZE && 0 <=row && row < BOARD_SIZE;
+        // error fixed
+        return 0 <= column &&  column < BOARD_SIZE && 0 <=row && row < BOARD_SIZE;
     }
 }
