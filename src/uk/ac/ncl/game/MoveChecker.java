@@ -95,10 +95,11 @@ public class MoveChecker {
     }
 
     /**
-     * Updates information about pieces
+     * // error fixed
+     * Updates the status of the cells in the "cells" list
      *
-     * @param cells - pieces to update
-     * @param colour - new colour
+     * @param cells - list of cells to update
+     * @param colour - new colour (status)
      */
     // 1 ERROR FIXED
     public void colourPieces(ArrayList<Cell> cells, CellStatus colour) {
