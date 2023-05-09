@@ -107,11 +107,11 @@ public class Cell {
     }
 
     /**
-     * Checks whether there exists a legal move for the piece.
-     * If such a move exists, returns true and adds information to the piece.
+     * // error fixed
+     * Checks whether there exists a legal move for the cell.
+     * If such a move exists, returns true and adds information to the cell.
      * @param colour - colour of the current player
      * @param cells - current information about the board
-     // error fixed
      * @return whether move is possible for the piece. If this is the case, then possible moves are stored in Cell.
      */
     // 5 ERROR FIXED
