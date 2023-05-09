@@ -48,12 +48,13 @@ public class MoveChecker {
     }
 
     /**
+     * // error fixed
      * Flips pieces between selected piece in directions of valid moves.
      *
-     * @param cell - piece we have just put on the board
+     * @param cell - cell we have just put on the board
      * @param colour - colour of the current player
      */
-    // 1 ERROR FIXED
+    // 2 ERROR FIXED
     public void flipPieces(Cell cell, CellStatus colour) {
         // error fixed
         cell.colourTemp(colour == OPPONENTS_CELL_STATUS ? OPPONENTS_COLOUR : PLAYERS_COLOUR, false);
