@@ -27,12 +27,13 @@ public class MoveChecker {
     }
 
     /**
-     * Generates a move of the opponent. Returns a move with the biggest max_score.
+     * // error fixed
+     * Generates a move of the opponent. Returns a cell with the biggest score move.
      *
      * @param cellStatus - colour of the opponent
-     * @return a piece to make a move
+     * @return a cell to move with the biggest score
      */
-    // 1 ERROR FIXED
+    // 2 ERROR FIXED
     public Cell generateOpponent(CellStatus cellStatus) {
         ArrayList<Cell> potentialMoves = findPotentialMoves(cellStatus);
         Cell opponentsMove = null;
