@@ -33,7 +33,7 @@ public class MoveChecker {
      * @param cellStatus - colour of the opponent
      * @return a cell to move with the biggest score
      */
-    // 2 ERROR FIXED
+    // 2 ERRORS FIXED
     public Cell generateOpponent(CellStatus cellStatus) {
         ArrayList<Cell> potentialMoves = findPotentialMoves(cellStatus);
         Cell opponentsMove = null;
