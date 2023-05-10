@@ -144,7 +144,7 @@ public class MoveChecker {
      *
      * @param grayCells - pieces with valid moves
      */
-    // 2 ERROR FIXED
+    // 2 ERRORS FIXED
     public void removeMoves(ArrayList<Cell> grayCells){
         // error fixed
         if (grayCells != null) {
