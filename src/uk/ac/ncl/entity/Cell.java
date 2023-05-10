@@ -114,7 +114,7 @@ public class Cell {
      * @param cells - current information about the board
      * @return whether move is possible for the piece. If this is the case, then possible moves are stored in Cell.
      */
-    // 5 ERROR FIXED
+    // 5 ERRORS FIXED
     public boolean isLegal(CellStatus colour, Cell[][] cells){
         CellStatus opponent = colour == CellStatus.LIGHT ? CellStatus.DARK : CellStatus.LIGHT;
         int score = 0;
