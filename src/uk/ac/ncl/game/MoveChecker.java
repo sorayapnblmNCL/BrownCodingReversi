@@ -78,7 +78,7 @@ public class MoveChecker {
      * @param colour - colour of the current player
      * @return a list of pieces for which there exist valid moves
      */
-    // 2 ERROR FIXED
+    // 2 ERRORS FIXED
     public ArrayList<Cell> findPotentialMoves(CellStatus colour) {
         ArrayList<Cell> potentialMoves = new ArrayList<Cell>();
         for (int i = 0; i < BOARD_SIZE; i++) {
