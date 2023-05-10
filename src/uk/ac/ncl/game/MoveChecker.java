@@ -114,7 +114,7 @@ public class MoveChecker {
      *
      * @return string with the results of the game
      */
-    // 3 ERROR FIXED
+    // 3 ERRORS FIXED
     public String getFinalScore(){
         int lights = 0;
         int darks = 0;
